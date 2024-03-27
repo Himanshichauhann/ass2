@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+            18-2-24
+		</title>
+		<style>
+			.container{
+				display: flex;
+				flex-direction: row;
+				height: 900px;
+				flex-wrap: wrap;
+				align-content: space-evenly;
+				align-items:flex-start ;
+				justify-content: center;
+			}
+			.container div{
+				height: 400px;;
+				width: 400px;
+				background-color: red;
+				border:black 2px solid;
+				margin:5px;
+				font-size: 30px;
+				color:white;
+				font-weight: 700;
+			}
+			div{
+				position: relative;
+			}
+			div img{
+				height:100% ;
+				width: 100%;
+				position:absolute;
+				z-index: 10;
+			}
+			q{
+				color: red;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+        <div class="container">
+            <div class="container"> 
+				<img src="Mallika/images/11.jpeg" />
+				<span style="z-index:20;"><q>Life goes on</q></span></div>
+			<div class="container"> 
+				<img src="Mallika/images/12.jpeg" />
+				<span style="z-index:20;"><q>Lies never hide</q></span></div>
+			<div class="container"> 
+				<img src="Mallika/images/10.jpeg" />
+				<span style="z-index:20;"><q>Realise and realese</q></span></div>
+			<div class="container"> 
+				<img src="Mallika/images/9.jpeg" />
+				<span style="z-index:20;"><q>Truth always win</q></span></div>
+			<div class="container"> 
+				<img src="Mallika/images/15.jpeg" />
+				<span style="z-index:20;"><q>Wait is forever</q></span></div>
+        </div>
+	</body>
+</html>

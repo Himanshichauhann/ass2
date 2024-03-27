@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Message</title>
+</head>
+<body>
+    <div id="msg"></div>
+    
+    <script>
+        var name = prompt("Enter your name");
+        var dt = new Date();
+        var hh = dt.getHours();
+        var greeting = "";
+
+        if (hh < 12) {
+            greeting = "Good Morning";
+        } else if (hh === 12) {
+            greeting = "Good Noon";
+        } else if (hh > 12 && hh < 17) {
+            greeting = "Good Afternoon";
+        } else if (hh >= 17 && hh < 21) {
+            greeting = "Good Evening";
+        } else {
+            greeting = "Good Night";
+        }
+
+        var message = greeting + " " + name;
+        var msg = document.getElementById('msg');
+        msg.innerHTML = message;
+
+        // Add event listener to hide the message when clicked
+        msg.addEventListener('click', function() {
+            msg.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
